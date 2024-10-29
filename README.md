@@ -57,4 +57,4 @@ Nombre: Anthony Flores Boza
 Contacto: anthonyestiven3064@gmail.com
 
 ## 🌐 Enlace al Proyecto en Vivo
-¿Quieres ver la ruleta en acción? [¡Pruébala aquí!]('https://roulette-onix.web.app/')
+¿Quieres ver la ruleta en acción? [¡Pruébala aquí!](https://roulette-onix.web.app/)
