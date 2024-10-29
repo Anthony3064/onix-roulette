@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico">
+    <title>Onix | Ruleta</title>
+
+    <link rel="icon" type="image/x-icon" href="./public/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/images/favicon-16x16.png">
+    <link rel="manifest" href="./public/images/site.webmanifest">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/roulette.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <main>
+        <img class="image" src="./public/images/logoOnix.png" />
+        <div id="rouletteContainer">
+            <canvas id="rouletteCanvas" width="350px" height="350px"></canvas>
+            <button id="spinButton">Girar</button>
+        </div>
+        <div class="awards_container">
+            <h2>Premios</h2>
+            <table id="table_awards" class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Premio</th>
+                    </tr>
+                </thead>
+                <tbody id="table_awards_tbody"></tbody>
+            </table>
+        </div>
+    </main>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
