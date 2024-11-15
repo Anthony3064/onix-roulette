@@ -106,7 +106,6 @@ function loadOptions(typeOptions) {
 loadOptions();
 
 const spinSound = document.getElementById('spinSound');
-let animationProgress = 0;
 
 function createRoulette() {
     const canvas = document.getElementById("rouletteCanvas");
@@ -121,6 +120,10 @@ function createRoulette() {
     let currentRotation = 0;
 
     const optionsRandom = shuffleArray(options);
+    const spinButton = document.getElementById("spinButton");
+    const newSpinButton = spinButton.cloneNode(true);
+    spinButton.parentNode.replaceChild(newSpinButton, spinButton);
+
 
     function drawRoulette() {
         ctx.clearRect(0, 0, width, height);
@@ -153,7 +156,6 @@ function createRoulette() {
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillText(number, textX, textY);
-
         });
 
         ctx.restore();
@@ -228,6 +230,7 @@ function createRoulette() {
 
     const loadAwards = () => {
         const tBodyAwards = document.getElementById("table_awards_tbody");
+        tBodyAwards.innerHTML = "";
         options.forEach(option => {
             const optionHtml = `<tr><td>${option.number}</td><td>${option.text}</td></tr>`;
             tBodyAwards.innerHTML += optionHtml;
