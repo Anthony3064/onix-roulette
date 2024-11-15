@@ -21,6 +21,11 @@
 <body>
     <main>
         <img class="image" src="./public/images/logoOnix.png" />
+        <audio id="spinSound" src="./public//sounds/spin-232536.mp3" preload="auto"></audio>
+        <div class="buttons_container">
+            <button class="btn btn--active" data-button-option="male">Hombres</button>
+            <button class="btn" data-button-option="female">Mujeres</button>
+        </div>
         <div id="rouletteContainer">
             <canvas id="rouletteCanvas" width="350px" height="350px"></canvas>
             <button id="spinButton">Girar</button>

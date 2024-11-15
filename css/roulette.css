@@ -29,6 +29,7 @@ main {
 #rouletteCanvas {
     width: 100%;
     height: 100%;
+    transition: transform .5s
 }
 
 #rouletteContainer::after {
@@ -40,7 +41,6 @@ main {
     width: 50px;
     height: 30px;
     background-color: #686868;
-
     clip-path: polygon(50% 100%, 20% 0, 80% 0);
 }
 
